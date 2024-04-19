@@ -26,41 +26,9 @@ make up
 ```
 
 ***
-<h3>Маршруты</h3>
+<h3>Документация</h3>
 
-Эндпоиты доступны по адресу: http://localhost:8000/
-
-```
-GET|HEAD api/comments
-
-POST api/comments
-
-GET|HEAD api/comments/{comment}
-
-PUT|PATCH api/comments/{comment}
-
-DELETE api/comments/{comment}
-
-GET|HEAD api/posts
-
-POST api/posts
-
-GET|HEAD api/posts/{post}
-
-PUT|PATCH api/posts/{post}
-
-DELETE api/posts/{post}
-
-GET|HEAD api/users
-
-POST api/users
-
-GET|HEAD api/users/{user}
-
-PUT|PATCH api/users/{user}
-
-DELETE api/users/{user}
-```
+Документация (на примере пользователей) доступна по адресу: http://localhost:8000/api/documentation
 
 ***
 <h3>Email</h3>
