@@ -71,6 +71,17 @@ services:
       - pgadmin-data:/var/lib/pgadmin
     networks:
       - web
+  # SMTP Server (Образ для Mac, возможно нужно поменять на других ОС)
+  mailhog:
+    image: 'jcalonso/mailhog:latest'
+    container_name: mailhog
+    logging:
+      driver: 'none'
+    ports:
+      - "1025:1025"
+      - "8025:8025"
+    networks:
+      - web
 
 networks:
   web:
