@@ -7,12 +7,15 @@ use App\Http\Requests\PostStoreRequest;
 use App\Http\Requests\PostUpdateRequest;
 use App\Http\Resources\PostResource;
 use App\Models\Post;
+use Illuminate\Support\Facades\Cache;
 
 class PostController extends Controller
 {
     public function index()
     {
-        return PostResource::collection(Post::all());
+        return PostResource::collection(Cache::rememberForever('posts', function () {
+            return Post::all();
+        }));
     }
 
     public function store(PostStoreRequest $request)
