@@ -1,4 +1,4 @@
-run: up env composer migrations
+run: up env composer key migrations
 
 up:
 	docker-compose up -d --build
@@ -11,6 +11,9 @@ composer:
 
 env:
 	cp .env.example .env
+
+key:
+	docker-compose run --rm app php artisan key:generate
 
 migrations:
 	docker-compose run --rm app php artisan migrate:fresh --seed
