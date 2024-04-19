@@ -111,7 +111,7 @@ use App\Http\Controllers\Controller;
  *      tags={"Post"},
  *
  *      @OA\Response(
- *          response=201,
+ *          response=200,
  *          description="OK",
  *               @OA\MediaType(
  *               mediaType="application/json",
@@ -119,64 +119,64 @@ use App\Http\Controllers\Controller;
  *                   @OA\Property(
  *                         property="data",
  *                         type="array",
- *                          @OA\Items(
- *                            @OA\Property(
- *                                property="id",
- *                                type="integer",
- *                                example=1
- *                            ),
- *                            @OA\Property(
- *                                property="title",
- *                                type="string",
- *                                example="Velit magnam sint quasi labore doloribus."
- *                            ),
- *                            @OA\Property(
- *                                property="content",
- *                                type="string",
- *                                example="Id consequatur ea accusamus dolorum quas hic. Maxime molestias numquam culpa nemo explicabo quidem eos. Nobis maiores cumque omnis."
- *                            ),
- *                            @OA\Property(
- *                                property="user_id",
- *                                type="integer",
- *                                example=1
- *                            ),
- *                            @OA\Property(
- *                                property="created_at",
- *                                type="string",
- *                                example="2024-04-19T08:12:42.000000Z"
- *                            ),
- *                            @OA\Property(
- *                                property="comments",
- *                                type="array",
- *                                @OA\Items(
- *                                    @OA\Property(
- *                                        property="id",
- *                                        type="integer",
- *                                        example=1
- *                                    ),
- *                                    @OA\Property(
- *                                         property="content",
- *                                         type="string",
- *                                         example="Quia excepturi architecto similique delectus est animi exercitationem."
- *                                    ),
- *                                    @OA\Property(
- *                                        property="user_id",
- *                                        type="integer",
- *                                        example=1
- *                                    ),
- *                                    @OA\Property(
- *                                         property="post_id",
- *                                         type="integer",
- *                                         example=1
- *                                    ),
- *                                    @OA\Property(
- *                                        property="created_at",
- *                                        type="string",
- *                                        example="2024-04-19T08:12:42.000000Z"
- *                                    ),
- *                                )
- *                             ),
- *                          )
+ *                         @OA\Items(
+ *                              @OA\Property(
+ *                                  property="id",
+ *                                  type="integer",
+ *                                  example=1
+ *                                  ),
+ *                                  @OA\Property(
+ *                                      property="title",
+ *                                      type="string",
+ *                                      example="Velit magnam sint quasi labore doloribus."
+ *                                  ),
+ *                                  @OA\Property(
+ *                                      property="content",
+ *                                      type="string",
+ *                                      example="Id consequatur ea accusamus dolorum quas hic. Maxime molestias numquam culpa nemo explicabo quidem eos. Nobis maiores cumque omnis."
+ *                                  ),
+ *                                  @OA\Property(
+ *                                      property="user_id",
+ *                                      type="integer",
+ *                                      example=1
+ *                                  ),
+ *                                  @OA\Property(
+ *                                      property="created_at",
+ *                                      type="string",
+ *                                      example="2024-04-19T08:12:42.000000Z"
+ *                                  ),
+ *                                  @OA\Property(
+ *                                      property="comments",
+ *                                      type="array",
+ *                                      @OA\Items(
+ *                                          @OA\Property(
+ *                                              property="id",
+ *                                              type="integer",
+ *                                              example=1
+ *                                          ),
+ *                                          @OA\Property(
+ *                                              property="content",
+ *                                              type="string",
+ *                                              example="Quia excepturi architecto similique delectus est animi exercitationem."
+ *                                          ),
+ *                                          @OA\Property(
+ *                                              property="user_id",
+ *                                              type="integer",
+ *                                              example=1
+ *                                          ),
+ *                                          @OA\Property(
+ *                                              property="post_id",
+ *                                              type="integer",
+ *                                              example=1
+ *                                          ),
+ *                                          @OA\Property(
+ *                                              property="created_at",
+ *                                              type="string",
+ *                                              example="2024-04-19T08:12:42.000000Z"
+ *                                          ),
+ *                                      )
+ *                                  ),
+ *
  *                       ),
  *                    )
  *               )
