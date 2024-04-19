@@ -1,4 +1,4 @@
-run: up env composer key migrations swagger
+run: env up composer key migrations swagger
 
 up:
 	docker-compose up -d --build
@@ -19,4 +19,4 @@ migrations:
 	docker-compose run --rm app php artisan migrate:fresh --seed
 
 swagger:
-	docker-compose run --rm laravel php artisan l5-swagger:generate
+	docker-compose run --rm app php artisan l5-swagger:generate
