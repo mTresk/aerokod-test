@@ -17,7 +17,9 @@ class CommentController extends Controller
 
     public function store(CommentStoreRequest $request)
     {
-        return Comment::create($request->validated());
+        $comment = Comment::create($request->validated());
+
+        return CommentResource::make($comment);
     }
 
     public function show(Comment $comment)
