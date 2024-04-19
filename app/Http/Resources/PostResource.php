@@ -14,6 +14,7 @@ class PostResource extends JsonResource
             'title' => $this->title,
             'content' => $this->content,
             'user_id' => $this->user_id,
+            'comments' => CommentResource::collection($this->comments)
         ];
     }
 }
