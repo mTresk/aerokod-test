@@ -30,7 +30,7 @@ class UserController extends Controller
     {
         $user->update($request->validated());
 
-        return $user;
+        return UserResource::make($user);
     }
 
     public function destroy(User $user)
