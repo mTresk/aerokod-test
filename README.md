@@ -28,7 +28,7 @@ make up
 ***
 <h3>Документация</h3>
 
-Документация (на примере пользователей и постов) доступна по адресу: http://localhost:8000/api/documentation
+Документация доступна по адресу: http://localhost:8000/api/documentation
 
 ***
 <h3>Email</h3>
